@@ -1,12 +1,3 @@
-![Homepage](docs/homepage.png)
-![Quote](docs/quote.png)
-![History](docs/history.png)
-![Quote](docs/search.png)
-![Buy](docs/buy.png)
-![Sell](docs/sell.png)
-![Transactions](docs/funds.png)
-![Password Change](docs/password.png)
-
 #    CS50 Finance:
 
 - This is a web application that simulates stock trading, built as part of Harvard's CS50 course .
@@ -87,6 +78,17 @@ finance/
    http://127.0.0.1:5000/
    ```
 
+
+#    Screenshots:
+
+![Homepage](docs/homepage.png)
+![Quote](docs/quote.png)
+![History](docs/history.png)
+![Quote](docs/search.png)
+![Buy](docs/buy.png)
+![Sell](docs/sell.png)
+![Transactions](docs/funds.png)
+![Password Change](docs/password.png)
 
 
 # Notes:
