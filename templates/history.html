@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        {% if not history %}
+            <p><strong>No transactions made.</strong></p>
+        {% else %}
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Stock</th>
+                        <th>Transaction</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for stock in history %}
+                        <tr>
+                            <td><b>{{ stock.symbol }}</b></td>
+                            {% if stock.shares < 1 %}
+                                <td><i>SELL</i></td>
+                            {% else %}
+                                <td><i>BUY</i></td>
+                            {% endif %}
+                            {% if stock.shares < 1 %}
+                                <td>{{ stock.shares * (-1) }}</td>
+                            {% else %}
+                                <td>{{ stock.shares }}</td>
+                            {% endif %}
+                            <td>{{ stock.price | usd }}</td>
+                            <td>{{ (stock.price * stock.shares) | usd }}</td>
+                            <td>{{ stock.timestamp }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endif %}
+    </div>
+{% endblock %}
