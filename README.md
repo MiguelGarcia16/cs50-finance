@@ -1,12 +1,9 @@
-# ------------------
-#    CS50 Finance
-# ------------------
+#    CS50 Finance:
 
 - This is a web application that simulates stock trading, built as part of Harvard's CS50 course .
 
-# ------------------
-#      Features
-# ------------------
+
+#      Features:
 
 - User authentication (register, login, logout)
 - Real-time stock quotes grabbing via API
@@ -16,9 +13,8 @@
 - Add/withdraw funds
 - Password management
 
-# ------------------
-#     Tech Stack
-# ------------------
+
+#     Tech Stack:
 
 - **Backend**: Python, Flask
 - **Frontend**: HTML, CSS (Bootstrap)
@@ -26,9 +22,8 @@
 - **Authentication**: Hashing using `werkzeug.security`
 - **API**: CS50 `lookup()` helper (stock prices)
 
-# ---------------------
-#   Project Structure
-# ---------------------
+
+#   Project Structure:
 
 ```
 finance/
@@ -55,9 +50,8 @@ finance/
 └── README.md
 ```
 
-# ---------------------
-#  Setup Instructions
-# ---------------------
+
+#  Setup Instructions:
 
 1. Clone the repository:
 
@@ -85,9 +79,6 @@ finance/
    ```
 
 
-=========================================================================
-=========================================================================
-
 
 # Notes:
 
@@ -108,4 +99,5 @@ finance/
 # Author:
 
 Miguel Garcia
+
 GitHub: https://github.com/MiguelGarcia16
